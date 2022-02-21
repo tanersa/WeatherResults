@@ -1,9 +1,6 @@
 package com.liberty.runner;
 
-
-
 import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
@@ -14,12 +11,12 @@ import cucumber.api.junit.Cucumber;
 				"html:target/default-cucumber-reports", //generates every time we run the cukes runner
 				"json:target/cucumber.json"
 		
-		},
-		
+		},		
 		tags="@temp",
 		features= {"src/test/resources/features"}, 
 		glue= {"com/liberty/step_definitions" }
-	,dryRun = false
+		,dryRun = false
 		)
+
 public class CukesRunner {}
 
