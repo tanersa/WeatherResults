@@ -2,12 +2,10 @@ package com.liberty.step_definition;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -54,7 +52,4 @@ public class weatherInfoStepDefs {
 			assertEquals(getWeather.get(each), weather.get(each));
 		}
 	}
-
-
-
 }
